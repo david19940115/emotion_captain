@@ -173,7 +173,7 @@
         color: 'bg-green-100', 
         textColor: 'text-green-900',
         icon: <DisgustIcon />, 
-        desc: '像厭厭一樣。覺得噁心、討厭，不想靠近那是人或事。',
+        desc: '像厭厭一樣。覺得噁心、討厭，不想靠近那些人或事。',
         tip: '試著用言語說出你不喜歡的原因，設立健康的界線。'
       },
     ];
@@ -342,9 +342,9 @@
       const getInstruction = () => {
         switch(phase) {
           case 'ready': return <span className="block leading-snug">你被犯規了，<br/>準備好開始罰球深呼吸了嗎？</span>;
-          case 'inhale': return '用鼻子吸氣... (像接住球)';
-          case 'hold': return '閉氣... (瞄準籃框)';
-          case 'exhale': return '用嘴巴慢慢吐氣... (出手！)';
+          case 'inhale': return '用鼻子吸氣...(運球一下)';
+          case 'hold': return '閉氣...(瞄準籃框)';
+          case 'exhale': return '用嘴巴吐氣...(出手！進！)';
           default: return '';
         }
       };
