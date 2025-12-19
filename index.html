@@ -191,9 +191,9 @@
 
           <div className="grid grid-cols-2 gap-4 w-full max-w-md">
             <MenuButton title="情緒簽到" icon={<Activity size={32} />} color="bg-orange-100 hover:bg-orange-200 text-orange-600" onClick={() => onNavigate('checkin')} />
-            <MenuButton title="認識情緒" icon={<BookOpen size={32} />} color="bg-sky-100 hover:bg-sky-200 text-sky-600" onClick={() => onNavigate('learn')} />
+            <MenuButton title="情緒圖鑑" icon={<BookOpen size={32} />} color="bg-sky-100 hover:bg-sky-200 text-sky-600" onClick={() => onNavigate('learn')} />
             <MenuButton title="冷靜練習" icon={<Heart size={32} />} color="bg-rose-100 hover:bg-rose-200 text-rose-600" onClick={() => onNavigate('calm')} />
-            <MenuButton title="記憶遊戲" icon={<Trophy size={32} />} color="bg-emerald-100 hover:bg-emerald-200 text-emerald-600" onClick={() => onNavigate('game')} />
+            <MenuButton title="情緒配對賽" icon={<Trophy size={32} />} color="bg-emerald-100 hover:bg-emerald-200 text-emerald-600" onClick={() => onNavigate('game')} />
           </div>
           
           <div className="mt-8 p-4 bg-white/80 rounded-xl shadow-sm border border-indigo-100 max-w-md w-full">
@@ -258,7 +258,7 @@
       );
     };
 
-    // --- 元件：認識情緒 ---
+    // --- 元件：情緒圖鑑 ---
     const LearnScreen = ({ onBack }) => {
       const [activeIndex, setActiveIndex] = useState(0);
 
@@ -359,7 +359,7 @@
 
       return (
         <div className="flex flex-col h-full p-4 animate-slide-up bg-gradient-to-b from-indigo-50 to-white">
-          <NavBar title="冷靜練習室" onBack={onBack} />
+          <NavBar title="冷靜練習" onBack={onBack} />
           
           <div className="flex-1 flex flex-col items-center justify-center space-y-12">
             <div className="relative">
@@ -409,7 +409,7 @@
       );
     };
 
-    // --- 元件：記憶遊戲 ---
+    // --- 元件：情緒配對賽 ---
     const GameScreen = ({ onBack }) => {
       const [cards, setCards] = useState([]);
       const [flipped, setFlipped] = useState([]);
